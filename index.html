@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<style>
+		body {
+			margin: 0;
+			background-color: black;
+		}
+
+		.d-none {
+			display: none;
+		}
+	</style>
+
+	<script type="module" src="app.js"></script>
+	<!-- <script type="module" src="./ex2-es6-module.js"></script> -->
+
+</head>
+
+<body>
+	<!-- skigame image -->
+	<!-- skigame menu image -->
+	<img src="./image/skigame/menu2.png" id="ski_menu2" style="display: none;">
+	<img src="./image/skigame/menu3.png" id="ski_menu3" style="display: none;">
+	<img src="./image/skigame/menu4.png" id="ski_menu4" style="display: none;">
+	<!-- skigame menu image -->
+
+	<!-- skigame image -->
+	<img src="./image/skigame/personL.png" id="person1" style="display: none;">
+	<img src="./image/skigame/personR.png" id="person2" style="display: none;">
+	<img src="./image/skigame/objplag.png" id="obj" style="display: none;">
+	<img src="./image/skigame/snowbg.png" id="snowbg" style="display: none;">
+	<img src="./image/skigame/Logo.png" id="logo" style="display: none;">
+	<img src="./image/skigame/tree.png" id="obj2" style="display: none;">
+	<img src="./image/skigame/mainbg.png" id="ski_menu" style="display: none;">
+	<img src="./image/skigame/effect.png" id="effect" style="display: none;">
+	<!-- skigame image -->
+	
+	<!-- skigame audio -->
+	<audio src="./audio/skigame/skigameBgm.mp3" volume="0" id="bgm">오디오 지원되지 않는 브라우저</audio>
+	<audio src="./audio/skigame/zap1.mp3" id="bgm2">오디오 지원되지 않는 브라우저</audio>
+	<audio src="./audio/skigame/switch10.wav" id="bgm3">오디오 지원되지 않는 브라우저</audio>
+	<audio src="./audio/skigame/round_end.wav" id="bgm4">오디오 지원되지 않는 브라우저</audio>
+	<!-- skigame audio -->
+
+
+	<!-- puzzlegame audio -->
+	<audio src="./audio/puzzle/puzzle-clear.mp3" id="puzzle-clear"></audio>
+	<audio src="./audio/puzzle/puzzle-click.mp3" id="puzzle-click"></audio>
+	<!-- puzzlegame audio -->
+
+	<!-- Intro image -->
+	<image src="./image/mainMenu.png" id="menu" style="display: none;"></image>
+	<!-- Intro image -->
+	<!-- Intro audio -->
+	<audio src="./audio/menuSound.mp3" id="menu-sound"></audio>
+	<!-- Intro audio -->
+
+	<!---------------------------------------->
+
+	<!-- main map image -->
+	<img src="./image/boy2.png" id="boy" style="display: none;">
+	<img src="./image/enemy.png" id="enemy" style="display: none;">
+	<img src="./image/background.png" id="bg" style="display: none;">
+	<img src="./image/map_off.png" id="bg_off" style="display: none;">
+	<img src="./image/map_on.png" id="bg_on" style="display: none;">
+	<img src="./image/map_moniter.png" id="bg_moniter" style="display: none;">
+	<img src="./image/teacherSay.png" id="dlg" style="display: none;">
+	<!-- main map image -->
+
+	<!-- Intro audio -->
+	<audio src="./audio/gameStart.mp3" id="game-start"></audio>
+	<!-- Intro audio -->
+
+	<!-- exit-canvas image -->
+	<img src="./image/doorLock.png" id="exit_lock" style="display: none;">
+	<!-- exit-canvas image -->
+
+	<!-- exit-canvas audio -->
+	<audio src="./audio/exit-game/locker_button.mp3" id="locker_button"></audio>
+	<audio src="./audio/exit-game/locker_open.mp3" id="locker_open"></audio>
+	<!-- exit-canvas audio -->
+	
+	<!-- outro-canvas image -->
+	<img src="./image/outro/mapOutro.png" id="outro_map" style="display: none;">
+	<img src="./image/outro/blood.png" id="blood" style="display: none;">
+	<!-- outro-canvas image -->
+	
+	
+	<!-- outro-canvas audio -->
+	<audio src="audio/outro/newlecVoice.mp3" id="newlec_voice"></audio>
+	<audio src="audio/outro/OutroVoice.mp3" id="outro_voice"></audio>
+	<audio src="audio/outro/ususVoice.mp3" id="usus_voice"></audio>
+	<!-- outro-canvas audio -->
+
+	<!---------------------------------------->
+
+	<!-- puzzlegame image -->
+	<img src="./image/puzzle/QRCode.png" id="QRCode" style="display: none;">
+	<img src="./image/puzzle/QRCodeClear.png" id="QRCodeClear" style="display: none;">
+	<img src="./image/puzzle/puzzleBackground1.png" id="background1" style="display: none;">
+	<!-- puzzlegame image -->
+
+	<!-- suneungGame image -->
+	<img src="./image/suneungGame/notcorrect.png" id="notcor" style="display: none">
+	<img src="./image/suneungGame/correct.png" id="cor" style="display: none">
+	<img src="./image/suneungGame/suneung.png" id="suneung" style="display: none">
+	<!-- suneungGame image -->
+
+	<!-- Quiz image -->
+	<img src="./image/Quiz/bg.png" class="bg d-none" />
+	<img src="./image/Quiz/close.png" class="close d-none">
+	<img src="./image/Quiz/t.png" class="t d-none" />
+	<img src="./image/Quiz/f.png" class="f d-none" />
+	<img src="./image/Quiz/hint.png" class="hint d-none">
+	<!-- Quiz image -->
+	
+	<canvas class="intro-canvas" width="640" height="800" tabindex="0"></canvas>
+	<!-- <canvas class="outro-canvas" width="640" height="800" tabindex="0"></canvas> -->
+	<canvas class="outro-canvas d-none" width="640" height="800" tabindex="0"></canvas>
+	<canvas class="dialog-canvas d-none" width="640" height="800" tabindex="0"></canvas>
+	<canvas class="game-canvas d-none" width="640" height="800" tabindex="0"></canvas>
+	<canvas class="skigame-canvas d-none" width="640" height="800" tabindex="0"></canvas>
+	<canvas class="puzzle-canvas d-none" width="640" height="800" tabindex="0" ></canvas>
+	<canvas class="suneungGame-canvas d-none" width="640" height="800" tabindex="0"></canvas>
+	<canvas class="exit-canvas d-none" width="640" height="800" tabindex="0"></canvas>
+	<canvas class="quiz-canvas d-none" width="640" height="800" tabindex="0"></canvas>
+	<canvas class="packman-canvas d-none" width="640" height="800" tabindex="0"></canvas>
+	<script>
+	</script>
+
+</body>
+</html>
